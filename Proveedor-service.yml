@@ -1,3 +1,0 @@
-server:
-    port: ${PORT:8885}
-message: Configuracion de Cajeror en el servidor levantado!
