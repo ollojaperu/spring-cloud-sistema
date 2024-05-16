@@ -9,11 +9,10 @@ spring:
     username: root
     password: 12345678
     driver-class-name: com.mysql.cj.jdbc.Driver
-    
   jpa:
     hibernate:
       ddl-auto: update   
-      database-platform=org.hibernate.dialect.MySQLDialect
+      database-platform=org.hibernate.dialect.MySQLDialect                     
   cloud:
     config:
       uri: http://localhost:8860 
