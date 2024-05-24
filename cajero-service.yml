@@ -2,7 +2,7 @@ server:
   port: ${PORT:8863}
 eureka:
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     service-url: defaultZone=http://localhost:8850/eureka
 #message: Configuracion de Cajero en el servidor levantado!
 
