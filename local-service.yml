@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: ms_local
 server:
    port: ${PORT:8864}
 message: Configuracion de local en el servidor levantado!
@@ -6,25 +9,7 @@ eureka:
     register-with-eureka: true
     #fetch-registry: false
     serviceurl:
-      defaultZone: http://localhost:8850/eureka/
-spring:
-  application:
-    name: ms_local
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+      defaultZone: http://localhost:8850/eureka/    
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
