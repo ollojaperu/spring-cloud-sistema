@@ -1,6 +1,5 @@
 spring:
-  application:
-    name: ms_local
+  
 server:
    port: ${PORT:8864}
 message: Configuracion de local en el servidor levantado!
@@ -11,6 +10,8 @@ eureka:
     serviceurl:
       defaultZone: http://localhost:8850/eureka/    
 spring:
+  application:
+    name: ms_local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: 12345678
