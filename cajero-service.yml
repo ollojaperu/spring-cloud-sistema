@@ -11,4 +11,6 @@ eureka:
     serviceurl:
       defaultZone: http://localhost:8850/eureka/
 message: Configuracion de Cajero en el servidor levantado!
-
+spring:
+  application:
+    name: ms_cajero
