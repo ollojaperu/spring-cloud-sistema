@@ -7,9 +7,9 @@ eureka:
     #fetch-registry: false
     serviceurl:
       defaultZone: http://localhost:8850/eureka/
-#spring:
-#  application:
-#    name: ms_local
+spring:
+  application:
+    name: ms_local
 
 
 
