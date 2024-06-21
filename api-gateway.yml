@@ -17,9 +17,9 @@ spring:
       discovery:
         locator:
           enabled: true
-    routes:
-      - id: cajero-service
-        uri: http://localhost:8863/cajero-service
-        predicates:
-          - Path=/apicajero/**    
+      routes:
+        - id: cajero-service
+          uri: http://localhost:8863/cajero-service
+          predicates:
+            - Path=/apicajero/**    
 message: Configuracion de Api gateway en el servidor levantado!
