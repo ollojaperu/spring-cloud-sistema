@@ -21,7 +21,7 @@ spring:
       routes[0]: 
         id: customer-microservice
         uri: lb://MS_CAJERO
-        predicates[0]: Path=/apimscustomer/**
+        predicates[0]: Path=/apicajero/**
         
         
         
