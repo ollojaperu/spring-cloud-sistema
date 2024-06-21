@@ -17,3 +17,14 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+    gateway:
+      routes[0]: 
+        id: customer-microservice
+        uri: lb://MS_CAJERO
+        predicates[0]: Path=/apimscustomer/**
+        
+        
+        
+
+
+
