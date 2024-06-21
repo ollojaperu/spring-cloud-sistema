@@ -22,12 +22,12 @@ spring:
 #        id: customer-microservice
 #        uri: lb://MS_CAJERO
 #        predicates[0]: Path=/apicajero/**
-     discovery:
-       locator:
-         enabled: true
-     routes:
-       - id: cajero-service
-         uri: lb://MS_CAJERO
-         predicates:
-           - Path=/apicajero/**
+    discovery:
+      locator:
+      enabled: true
+    routes:
+      - id: cajero-service
+        uri: lb://MS_CAJERO
+        predicates:
+          - Path=/apicajero/**
         
