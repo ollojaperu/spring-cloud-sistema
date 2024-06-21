@@ -10,9 +10,9 @@ spring:
   application:
     name: api-gateway
   cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+    #loadbalancer:
+    #  ribbon:
+    #    enabled: false
     gateway:
       discovery:
         locator:
@@ -20,7 +20,7 @@ spring:
       routes:
         - id: cajero-service
           #uri: http://localhost:8863/CAJERO-SERVICE
-          uri: ${POSTS_ROUTE_URI:http://localhost:8863}
+          uri: localhost:8863
           predicates:
-            - Path=/apicajero/**    
+            - Path=/apicajero/
 message: Configuracion de Api gateway en el servidor levantado!
