@@ -1,15 +1,15 @@
-#server:
-#  port: ${PORT:8851}
+server:
+  port: ${PORT:8851}
 eureka:
   client:
     register-with-eureka: true
     #fetch-registry: false
     serviceurl:
       defaultZone: http://localhost:8850/eureka/
-  instance:
-    instance:
-      id: ${spring.application.name}:${random.uuid}
-message: Configuracion de Cajero en el servidor levantado!
+#  instance:
+#    instance:
+#      id: ${spring.application.name}:${random.uuid}
+message: Configuracion de Api gateway en el servidor levantado!
 spring:
   application:
     name: api-gateway
