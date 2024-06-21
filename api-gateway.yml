@@ -19,7 +19,7 @@ spring:
           enabled: true
     routes:
       - id: cajero-service
-        uri: lb://MS_CAJERO
+        uri: 8863://MS_CAJERO
         predicates:
           - Path=/apicajero/**    
 message: Configuracion de Api gateway en el servidor levantado!
