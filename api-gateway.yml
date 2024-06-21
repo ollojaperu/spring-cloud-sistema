@@ -13,7 +13,7 @@ spring:
     gateway:
       routes:
       - id: CAJERO-SERVICE
-        uri: http://localhost:8863/apicajero/
-        #predicates:
-        #- Path=/apicajero/**
+        uri: http://localhost:8863
+        predicates:
+        - Path=/apicajero/**
 message: Configuracion de Api gateway en el servidor levantado!
