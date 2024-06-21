@@ -6,10 +6,6 @@ eureka:
     #fetch-registry: false
     serviceurl:
       defaultZone: http://localhost:8850/eureka/
-#  instance:
-#    instance:
-#      id: ${spring.application.name}:${random.uuid}
-message: Configuracion de Api gateway en el servidor levantado!
 spring:
   application:
     name: api-gateway
@@ -17,17 +13,13 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
-#    gateway:
-#      routes[0]: 
-#        id: customer-microservice
-#        uri: lb://MS_CAJERO
-#        predicates[0]: Path=/apicajero/**
-    discovery:
-      locator:
-      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
     routes:
       - id: cajero-service
         uri: lb://MS_CAJERO
         predicates:
-          - Path=/apicajero/**
-        
+          - Path=/apicajero/**    
+message: Configuracion de Api gateway en el servidor levantado!
