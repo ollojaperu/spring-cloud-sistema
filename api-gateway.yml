@@ -22,5 +22,5 @@ spring:
           #uri: http://localhost:8863/CAJERO-SERVICE
           uri: ${POSTS_ROUTE_URI:http://localhost:8863}
           predicates:
-            - Path=/apicajero/**    
+            - Path=apicajero/**    
 message: Configuracion de Api gateway en el servidor levantado!
